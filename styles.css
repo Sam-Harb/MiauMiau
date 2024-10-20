@@ -35,4 +35,7 @@ h1{
 #siguiente{
   right: 0;
 }
+#anterior:hover , #siguiente:hover{
+  background-color: rgb(7, 8, 8);
+}
 
