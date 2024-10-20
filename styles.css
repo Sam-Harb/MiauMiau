@@ -7,9 +7,32 @@ h1{
   font-size: xx-large;
 }
 .carousel-container{
-  width: 100%;
+  margin: 0 auto;
+  width: 90vw;
   height: 80vh;
   overflow: hidden;
   position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(229, 163, 196);
 }
+.carousel-button{
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white;
+  border: none;
+  padding: 10px;
+  cursor:pointer;
+  z-index:100;
+}
+
+#anterior{
+  left: 0;
+}
+#siguiente{
+  right: 0;
+}
+
