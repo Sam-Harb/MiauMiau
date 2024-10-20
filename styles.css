@@ -24,7 +24,7 @@ h1{
   background-color: rgba(0, 0, 0, 0.5);
   color:white;
   border: none;
-  padding: 10px;
+  padding: 15px 20px;
   cursor:pointer;
   z-index:100;
 }
@@ -38,4 +38,16 @@ h1{
 #anterior:hover , #siguiente:hover{
   background-color: rgb(7, 8, 8);
 }
-
+.carousel-slide-container{
+  margin: auto auto;
+  width: 80vw;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-slide{
+  width:100vw;
+  height:100%;
+  z-index: inherit;
+}
