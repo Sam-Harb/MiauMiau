@@ -46,8 +46,16 @@ h1{
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-.carousel-slide{
-  width:100vw;
-  height:100%;
+.carousel-slide {
+  min-width: 100%; 
+  height: 100%; 
   z-index: inherit;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; 
+  display: block; 
+  margin: auto; 
 }
