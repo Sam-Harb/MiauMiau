@@ -24,7 +24,7 @@ function updateSlidePosition(){
 }
 anteriorButton.addEventListener('click', function() {
   currentSlide--;
-  if(currentSlide<0){
+  if(currentSlide > 0){
     currentSlide = totalSlides -1;
   }
   updateSlidePosition()
