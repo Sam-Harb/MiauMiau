@@ -41,6 +41,7 @@ h1{
   margin: auto auto;
   width: 300%; 
   height: 70vh;
+  align-items: center;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -49,12 +50,10 @@ h1{
   height: 100%; 
   z-index: inherit;
 }
-
 .carousel-slide img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover; 
   display: block; 
   margin: auto; 
-  border: 1px solid red
 }
