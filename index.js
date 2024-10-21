@@ -16,15 +16,15 @@ const anteriorButton = document.getElementById('anterior');
 const siguienteButton = document.getElementById('siguiente');
 function updateSlidePosition(){
   const slideWidth = slideContainer.offsetWidth;
-  currentSlide++;
+  // currentSlide++;
   if (currentSlide >= totalSlides) {
     currentSlide =0;
   }
   slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
-anteriorButton.addEventListener('click', function() {
+ anteriorButton.addEventListener('click', function() {
   currentSlide--;
-  if(currentSlide > 0){
+  if(currentSlide < 0){
     currentSlide = totalSlides -1;
   }
   updateSlidePosition()
