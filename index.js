@@ -15,6 +15,7 @@ const slideContainer = document.querySelector('.carousel-slide-container');
 const anteriorButton = document.getElementById('anterior');
 const siguienteButton = document.getElementById('siguiente');
 const carouselSlide = document.querySelectorAll(".carousel-slide");
+const menumiau = document.querySelector('.menumiau');
 function updateSlidePosition(){
   const slideWidth = slideContainer.offsetWidth;
     // currentSlide+;
@@ -23,6 +24,14 @@ function updateSlidePosition(){
   }
   slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
+menumiau.addEventListener('mouseover', function(){
+  this.style.transform = 'scale(1.2)'
+  this.style.transition = 'transform 0.5s ease';
+});
+menumiau.addEventListener('mouseout', function(){
+  this.style.transform = 'scale(1)';
+  this.style.transition = 'transform 0.5s ease';
+})
  anteriorButton.addEventListener('click', function() {
   currentSlide--;
   if(currentSlide < 0){
