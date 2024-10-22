@@ -1,7 +1,7 @@
 let currentSlide = 0;
 const totalSlides = 3;
-/* const intervalTime = 3000;
-const slideContainer = document.querySelector('.carousel-slide-container');
+const intervalTime = 3000;
+/* const slideContainer = document.querySelector('.carousel-slide-container');
 function updateSlidePosition(){
   const slideWidth = slideContainer.offsetWidth;
   currentSlide++;
@@ -9,15 +9,15 @@ function updateSlidePosition(){
     currentSlide =0;
   }
   slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-}
-setInterval(updateSlidePosition, intervalTime);  */
+} */
+setInterval(updateSlidePosition, intervalTime); 
 const slideContainer = document.querySelector('.carousel-slide-container');
 const anteriorButton = document.getElementById('anterior');
 const siguienteButton = document.getElementById('siguiente');
 const carouselSlide = document.querySelectorAll(".carousel-slide");
 function updateSlidePosition(){
   const slideWidth = slideContainer.offsetWidth;
-  //  currentSlide+;
+    // currentSlide+;
   if (currentSlide >= totalSlides) {
     currentSlide =0;
   }
