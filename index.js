@@ -25,10 +25,12 @@ function updateSlidePosition(){
   slideContainer.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 menumiau.addEventListener('mouseover', function(){
+  this.style.transformOrigin = 'center';
   this.style.transform = 'scale(1.2)'
   this.style.transition = 'transform 0.5s ease';
 });
 menumiau.addEventListener('mouseout', function(){
+  this.style.transformOrigin = 'center';
   this.style.transform = 'scale(1)';
   this.style.transition = 'transform 0.5s ease';
 })

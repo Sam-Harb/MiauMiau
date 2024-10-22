@@ -7,6 +7,12 @@ body{
   font-family: 'Amatic SC';
   background-color: rgb(157, 246, 246);
   border-color:rgb(157, 246, 246);
+  display: inline-flex;
+  text-align:left;
+  margin: auto;
+  width:fit-content;
+  height: fit-content;
+  
 }
 h1{
   font-size: xx-large;
